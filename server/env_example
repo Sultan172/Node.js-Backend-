@@ -1,0 +1,4 @@
+PORT= порт(3000 обычно)
+DB= диалект://пользователь:пароль@localhost:5432/название ДБ
+SECRET_ACCESS_TOKEN='аксес-токен'
+SECRET_REFRESH_TOKEN='рефреш-токен'
