@@ -11,10 +11,10 @@ module.exports = (sequelize, DataTypes) => {
       title: DataTypes.STRING,
       description: DataTypes.TEXT,
       status: {
-        type: DataTypes.STRING,
+        type: DataTypes.ENUM('pending', 'in-progress', 'completed'),
         defaultValue: 'pending',
       },
-      UserId: DataTypes.INTEGER,
+      userId: DataTypes.INTEGER,
     },
     {
       sequelize,

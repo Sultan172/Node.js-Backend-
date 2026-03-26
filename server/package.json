@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:reset": "sequelize-cli db:drop && sequelize-cli db:create && sequelize-cli db:migrate && sequelize-cli db:seed:all",
+    "test": "npm run db:reset && jest",
     "db:create": "npx sequelize db:create",
     "db:migrate": "npx sequelize db:migrate",
     "db:undoMigrate": "npx sequelize db:migrate:undo:all",
